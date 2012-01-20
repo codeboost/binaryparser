@@ -7,21 +7,26 @@ Callbacks are called whenever a binary field has been received and the data form
 
 1. Include the binary parser
 
+
 	const bp = require ('binaryparser').BinaryParser;
 
+
 2. Create an instance of the parser:
+
 
 	var parser = new bp.BinaryParser();
 
 
 3. Feed the buffers from the network to the binary parser
 
+	
 	socket.on("data", function(data){
 		parser.addBuffer(data);
 	});	
 
 
 4. Define a data format and process the parsed data:
+
 
 	parser.setFormat({
 		fileSize: bp.dword(function(size){
@@ -33,6 +38,7 @@ Callbacks are called whenever a binary field has been received and the data form
 		})
 	});
 
+
 Documentation
 =============
 
@@ -40,6 +46,7 @@ Data types
 ----------
 
 The following data types are supported:
+
 
 	char8: 8 bits unsigned
 	ushort: 16 bits unsigned
