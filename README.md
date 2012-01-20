@@ -5,28 +5,23 @@ BinaryParser is a node.js module which facilitates parsing of binary data receiv
 BinaryParser lets you define the data format using javascript object notation and allows for parsing of complex binary streams.
 Callbacks are called whenever a binary field has been received and the data format can be changed on-the-fly. 
 
-1. Include the binary parser
-
+Include the binary parser
 
 	const bp = require ('binaryparser').BinaryParser;
 
-
-2. Create an instance of the parser:
-
-
+Create an instance of the parser:
+	
 	var parser = new bp.BinaryParser();
 
 
-3. Feed the buffers from the network to the binary parser
-
+Feed the buffers from the network to the binary parser
 	
 	socket.on("data", function(data){
 		parser.addBuffer(data);
 	});	
 
 
-4. Define a data format and process the parsed data:
-
+Define a data format and process the parsed data:
 
 	parser.setFormat({
 		fileSize: bp.dword(function(size){
