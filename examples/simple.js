@@ -11,8 +11,8 @@
 	
 	The program will print out the size of the string and the string from the binary buffer.
 */
-var sys = require('sys');
-var bp = require('../binaryparser');
+var sys = require('util');
+var bp = require('../');
 var BinaryBuilder = require('./binary.builder').BinaryBuilder;
 
 

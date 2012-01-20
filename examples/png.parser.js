@@ -22,8 +22,8 @@
 	The program will print out the contents of the chunks of the PNG file.
 */
 
-var sys = require('sys');
-var bp = require('../binaryparser');
+var sys = require('util');
+var bp = require('../');
 var fs = require('fs');
 
 sys.puts("PNG Parser: Nodejs binary stream parser demo");
