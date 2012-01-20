@@ -1,0 +1,15 @@
+{
+    "name": "binaryparser"
+  , "version": "0.2.0"
+  , "description": "Library for parsing binary data"
+  , "keywords": ["binary", "parser", "bits"]
+  , "author": "Florin Braghis <florin@libertv.ro>"
+  , "repository":{
+        "type": "git"
+      , "url": "https://github.com/codeboost/binaryparser"
+    }
+  , "dependencies": {
+     }
+  , "main": "index"
+  , "engines": { "node": ">= 0.4.0" }
+}
